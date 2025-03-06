@@ -4,7 +4,7 @@
 (defn handler [req]
   {:status  200
    :headers {}
-   :body    "boo"})
+   :body    "boo1"})
 
 (defn main []
   (server/run-server handler
