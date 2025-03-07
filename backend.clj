@@ -2,7 +2,7 @@
   (:require [org.httpkit.server :as server]))
 
 (defn handler [req]
-  (if (contains? #{"readyz" "livez"} (:path req))
+  (if (contains? #{"/readyz" "/livez"} (:uri req))
     ;; K8s
     {:status  200
      :headers {}
