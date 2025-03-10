@@ -8,9 +8,9 @@
      :headers {}
      :body    "foo"}
 
-    {:status  200
+    {:status  500
      :headers {}
-     :body    "foo"}))
+     :body    "I am not working"}))
 
 (defn main []
   (server/run-server handler
